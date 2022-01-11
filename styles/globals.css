@@ -1,16 +1,54 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.cont {
+  width: 100%;
+  padding: 0 calc(1rem * 40 / 16);
+  margin: 0 auto;
 }
-
-* {
-  box-sizing: border-box;
+@media (min-width: 1024px) {
+  .cont {
+    padding: 0 calc(1rem * 80 / 16);
+  }
+}
+@media (min-width: 1280px) {
+  .cont {
+    padding: 0 calc(1rem * 40 / 16);
+    max-width: calc(1rem * 1280 / 16);
+  }
+}
+#reviews .swiper {
+  padding-bottom: 60px;
+}
+#reviews .swiper-wrapper {
+  align-items: stretch;
+}
+#reviews .swiper-slide {
+  height: auto;
+}
+@media (min-width: 1024px) {
+  #reviews .swiper-slide {
+    height: auto;
+    transition: all 0.3s;
+    transform: scale(0.9);
+  }
+  #reviews .swiper-slide-active {
+    transform: scale(1);
+  }
+}
+#reviews .swiper-pagination {
+  bottom: 10px;
+}
+#reviews .swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+}
+#reviews .swiper-pagination-bullet-active {
+  background-color: #1b528f;
 }
