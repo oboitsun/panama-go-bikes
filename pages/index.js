@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Gallery from "../Components/Gallery";
 import HeroSection from "../Components/HeroSection";
+import Location from "../Components/Location";
 import Testimonials from "../Components/Testimonials";
 import WhatIncludes from "../Components/WhatIncludes";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <WhatIncludes />
       <Testimonials />
       <Gallery />
+      <Location />
     </div>
   );
 }

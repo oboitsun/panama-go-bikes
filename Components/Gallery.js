@@ -5,16 +5,16 @@ const images = [
   "/assets/gallery/1.jpg",
   "/assets/gallery/2.jpg",
   "/assets/gallery/3.jpg",
-  "/assets/gallery/4.jpg",
-  "/assets/gallery/5.jpg",
-  "/assets/gallery/6.jpg",
-  "/assets/gallery/7.jpg",
+  "/assets/gallery/10.jpeg",
+  "/assets/gallery/11.jpeg",
+  "/assets/gallery/12.jpeg",
   "/assets/gallery/8.jpg",
+  "/assets/gallery/4.jpg",
   "/assets/gallery/9.jpg",
 ];
 function Gallery() {
   return (
-    <div className=" py-10 lg:py-20 font-mont">
+    <div id="gallery" className=" py-10 lg:py-20 font-mont">
       <div className="cont ">
         <p className="font-extrabold text-center text-2xl lg:text-[1.875rem] xl:text-[2.5rem] leading-none pb-8 lg:pb-10">
           Gallery

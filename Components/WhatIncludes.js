@@ -9,7 +9,7 @@ const features = [
 ];
 function WhatIncludes() {
   return (
-    <div className="py-10 font-mont">
+    <div id="about" className="py-10 lg:py-16 xl:py-24 font-mont">
       <div className="cont">
         <div className="grid gap-6 w-full lg:grid-cols-2 lg:gap-10 xl:grid-cols-[580px,1fr]">
           <div className="">

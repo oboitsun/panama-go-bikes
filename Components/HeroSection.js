@@ -11,7 +11,7 @@ const route = [
 ];
 function HeroSection() {
   return (
-    <div className="relative py-10 lg:py-20 xl:py-32 font-mont">
+    <div className="relative py-10 lg:py-20 xl:py-32 font-mont mt-[105px] lg:mt-[115px] xl:mt-[127px]">
       <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-black to-transparent z-[1] opacity-50 pointer-events-none"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full">
         <Image

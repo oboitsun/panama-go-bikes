@@ -9,7 +9,7 @@ const anchors = [
   { id: "gallery", label: "Gallery" },
   { id: "contact", label: "Contact us" },
 ];
-function Header({ showMenu, setShowMenu }) {
+function Footer() {
   const linkProps = {
     spy: true,
     smooth: true,
@@ -18,7 +18,7 @@ function Header({ showMenu, setShowMenu }) {
     activeClass: "active",
   };
   return (
-    <div className="py-7 w-full text-navy bg-white shadow-xl font-mont z-30 fixed top-0 left-0">
+    <div className="py-7 text-white bg-navy shadow-xl font-mont relative z-10">
       <div className="cont  flex items-center justify-between">
         <div className=" w-20 lg:w-24 xl:w-[120px]">
           <Image
@@ -29,20 +29,23 @@ function Header({ showMenu, setShowMenu }) {
             alt="Panama Bike Tours Logo"
           />
         </div>
-        <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
-        <div className="hidden lg:flex items-center lg:gap-8 xl:gap-12 text-sm lg:text-base">
+
+        <div className="flex items-center lg:gap-8 xl:gap-12 text-sm lg:text-base">
           {anchors.map((a, i) => (
             <Link
               key={i}
               to={a.id}
-              className="text-grey font-bold font-mont"
+              className="text-white font-bold font-mont hidden lg:block"
               {...linkProps}
             >
               {a.label}
             </Link>
           ))}
-          <GetStartedButton> get started</GetStartedButton>
-          <a className="font-bold underline" href="tel:+507 6905 2819">
+          <GetStartedButton btnStyle="outlined"> get started</GetStartedButton>
+          <a
+            className="font-bold underline hidden lg:block"
+            href="tel:+507 6905 2819"
+          >
             +507 6905 2819
           </a>
         </div>
@@ -51,4 +54,4 @@ function Header({ showMenu, setShowMenu }) {
   );
 }
 
-export default Header;
+export default Footer;

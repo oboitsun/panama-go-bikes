@@ -49,7 +49,7 @@ function Testimonials() {
   return (
     <div id="reviews" className="bg-lightGrey font-mont py-10 lg:py-20">
       <div className="cont relative">
-        <p className="font-extrabold text-center text-2xl lg:text-[1.875rem] xl:text-[2.5rem] leading-none lg:pb-10">
+        <p className="font-extrabold text-center text-2xl lg:text-[1.875rem] xl:text-[2.5rem] leading-none lg:pb-10 pb-5">
           <span className="text-navy">100+</span> people love us
         </p>
         <div className="relative">
