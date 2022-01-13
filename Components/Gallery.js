@@ -27,7 +27,7 @@ function Gallery() {
                 i === images.length - 1 ? "hidden lg:block" : ""
               }`}
             >
-              <div className="absolute w-full h-full top-0 left-0 transition-transform hover:scale-110 cursor-pointer">
+              <div className="absolute w-full h-full top-0 left-0 transition-transform hover:scale-110 hover:rotate-3 cursor-pointer">
                 <Image
                   layout="fill"
                   objectFit="cover"

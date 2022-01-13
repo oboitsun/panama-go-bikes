@@ -67,7 +67,7 @@ function Testimonials() {
           </div>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            autoplay={{ delay: 4500, pauseOnMouseEnter: true }}
+            autoplay={{ delay: 5500, pauseOnMouseEnter: true }}
             spaceBetween={40}
             pagination
             navigation={{ prevEl: "#prev-review", nextEl: "#next-review" }}

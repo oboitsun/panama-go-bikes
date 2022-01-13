@@ -35,7 +35,7 @@ function Footer() {
             <Link
               key={i}
               to={a.id}
-              className="text-white font-bold font-mont hidden lg:block"
+              className="text-white font-bold font-mont hidden lg:block cursor-pointer"
               {...linkProps}
             >
               {a.label}

@@ -35,7 +35,7 @@ function Header({ showMenu, setShowMenu }) {
             <Link
               key={i}
               to={a.id}
-              className="text-grey font-bold font-mont"
+              className="text-grey font-bold font-mont cursor-pointer hover:text-navy"
               {...linkProps}
             >
               {a.label}
